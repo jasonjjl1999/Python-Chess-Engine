@@ -1,11 +1,6 @@
 from chessPlayer import *
 
 board = genBoard()
-    
-#Testing
-
-
-
 
 #Move Maker
 done = False
@@ -41,10 +36,6 @@ while done == False:
         else:
             print("Invalid move")
             
-            
-   
-            
-    
     while True:
         print chessPlayer(board, 2)
         printBoard(board)
