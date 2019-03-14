@@ -9,7 +9,7 @@ while done == False:
     printBoard(board)
     
     while True:
-        print chessPlayer(board, 1)
+        print (chessPlayer(board, 1))
         printBoard(board)
         white_index = int(raw_input("White: Enter the index of the piece to move "))
         if (board[white_index]>15 or board[white_index]<10):
@@ -24,7 +24,7 @@ while done == False:
         
     while True:
         movelist = GetPieceLegalMoves(board, white_index)
-        print movelist
+        print(movelist)
         white_move = int(raw_input("White: Enter the index to move to "))
         for i in movelist:
             if white_move == i:
@@ -37,7 +37,7 @@ while done == False:
             print("Invalid move")
             
     while True:
-        print chessPlayer(board, 2)
+        print(chessPlayer(board, 2))
         printBoard(board)
         black_index = int(raw_input("Black: Enter the index of the piece to move "))
         if (board[black_index]>25 or board[black_index]<20):
@@ -52,7 +52,7 @@ while done == False:
         
     while True:
         movelist = GetPieceLegalMoves(board, black_index)
-        print movelist
+        print(movelist)
         black_move = int(raw_input("Black: Enter the index to move to "))
         for i in movelist:
             if black_move == i:

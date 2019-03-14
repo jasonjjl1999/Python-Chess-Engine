@@ -8,7 +8,7 @@ class tree:
                 return True
 
         def Print_DepthFirst(self):
-                print self.indent + str(self.store[0])
+                print (self.indent + str(self.store[0]))
                 for i in range (0, len(self.store[1])):
                         self.store[1][i].indent = self.indent + "   "
                         self.store[1][i].Print_DepthFirst()
