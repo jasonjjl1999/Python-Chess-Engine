@@ -40,7 +40,7 @@ while done == False:
         print(chessPlayer(board, 2))
         printBoard(board)
         black_index = int(
-            raw_input("Black: Enter the index of the piece to move "))
+            input("Black: Enter the index of the piece to move "))
         if (board[black_index] > 25 or board[black_index] < 20):
             print("There is no valid black piece at the index")
         else:
